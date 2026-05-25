@@ -1,0 +1,15 @@
+D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\bin\Debug\net9.0\PRN232.EduSystem.Services.deps.json
+D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\bin\Debug\net9.0\PRN232.EduSystem.Services.dll
+D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\bin\Debug\net9.0\PRN232.EduSystem.Services.pdb
+D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\bin\Debug\net9.0\PRN232.EduSystem.Repositories.dll
+D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\bin\Debug\net9.0\PRN232.EduSystem.Repositories.pdb
+D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\obj\Debug\net9.0\PRN232.EduSystem.Services.csproj.AssemblyReference.cache
+D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\obj\Debug\net9.0\PRN232.EduSystem.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\obj\Debug\net9.0\PRN232.EduSystem.Services.AssemblyInfoInputs.cache
+D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\obj\Debug\net9.0\PRN232.EduSystem.Services.AssemblyInfo.cs
+D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\obj\Debug\net9.0\PRN232.EduSystem.Services.csproj.CoreCompileInputs.cache
+D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\obj\Debug\net9.0\PRN232.E.F43F0C74.Up2Date
+D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\obj\Debug\net9.0\PRN232.EduSystem.Services.dll
+D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\obj\Debug\net9.0\refint\PRN232.EduSystem.Services.dll
+D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\obj\Debug\net9.0\PRN232.EduSystem.Services.pdb
+D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\obj\Debug\net9.0\ref\PRN232.EduSystem.Services.dll
