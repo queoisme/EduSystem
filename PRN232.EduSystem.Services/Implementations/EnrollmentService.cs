@@ -53,6 +53,18 @@ public class EnrollmentService : IEnrollmentService
 
     public async Task<bool> DeleteAsync(int id) => await _repo.DeleteAsync(id);
 
+    public async Task<(List<EnrollmentModel> Items, int Total)> GetByCourseIdAsync(int courseId, QueryFilter filter)
+    {
+        var (entities, total) = await _repo.GetByCourseIdAsync(courseId, filter);
+        return (entities.Select(Map).ToList(), total);
+    }
+
+    public async Task<(List<EnrollmentModel> Items, int Total)> GetByStudentIdAsync(int studentId, QueryFilter filter)
+    {
+        var (entities, total) = await _repo.GetByStudentIdAsync(studentId, filter);
+        return (entities.Select(Map).ToList(), total);
+    }
+
     private static EnrollmentModel Map(Enrollment e) => new()
     {
         EnrollmentId = e.EnrollmentId,

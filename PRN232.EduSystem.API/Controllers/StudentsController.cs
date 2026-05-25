@@ -11,9 +11,14 @@ namespace PRN232.EduSystem.API.Controllers;
 [Route("api/[controller]")]
 public class StudentsController : ControllerBase
 {
-    private readonly IStudentService _service;
+    private readonly IStudentService    _service;
+    private readonly IEnrollmentService _enrollmentService;
 
-    public StudentsController(IStudentService service) => _service = service;
+    public StudentsController(IStudentService service, IEnrollmentService enrollmentService)
+    {
+        _service           = service;
+        _enrollmentService = enrollmentService;
+    }
 
     [HttpGet]
     public async Task<IActionResult> GetAll([FromQuery] QueryParameters qp)
@@ -67,6 +72,25 @@ public class StudentsController : ControllerBase
         return Ok(ApiResponse<object>.Ok(null!, "Student deleted successfully"));
     }
 
+    [HttpGet("{id:int}/enrollments")]
+    public async Task<IActionResult> GetEnrollments(int id, [FromQuery] QueryParameters qp)
+    {
+        if (!await _service.ExistsAsync(id))
+            return NotFound(ApiResponse<object>.Fail($"Student with id={id} not found"));
+
+        var filter         = QueryParameterParser.ToQueryFilter(qp);
+        var (items, total) = await _enrollmentService.GetByStudentIdAsync(id, filter);
+        var responses      = items.Select(MapEnrollmentToResponse).ToList();
+
+        if (!string.IsNullOrWhiteSpace(qp.Fields))
+        {
+            var filtered = FieldSelector.ApplyToList(responses.Cast<object>(), qp.Fields);
+            return Ok(PagedResponse<object?>.Ok(filtered, filter.Page, filter.PageSize, total));
+        }
+
+        return Ok(PagedResponse<EnrollmentResponse>.Ok(responses, filter.Page, filter.PageSize, total));
+    }
+
     private static StudentResponse MapToResponse(StudentModel m) => new()
     {
         StudentId   = m.StudentId,
@@ -87,5 +111,27 @@ public class StudentsController : ControllerBase
                 SemesterId = e.Course.SemesterId,
             }
         }).ToList(),
+    };
+
+    private static EnrollmentResponse MapEnrollmentToResponse(EnrollmentModel m) => new()
+    {
+        EnrollmentId = m.EnrollmentId,
+        StudentId    = m.StudentId,
+        CourseId     = m.CourseId,
+        EnrollDate   = m.EnrollDate,
+        Status       = m.Status,
+        Course = m.Course is null ? null : new CourseResponse
+        {
+            CourseId   = m.Course.CourseId,
+            CourseName = m.Course.CourseName,
+            SemesterId = m.Course.SemesterId,
+            Semester = m.Course.Semester is null ? null : new SemesterResponse
+            {
+                SemesterId   = m.Course.Semester.SemesterId,
+                SemesterName = m.Course.Semester.SemesterName,
+                StartDate    = m.Course.Semester.StartDate,
+                EndDate      = m.Course.Semester.EndDate,
+            }
+        },
     };
 }

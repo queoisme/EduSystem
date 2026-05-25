@@ -12,3 +12,4 @@ D:\C#\WebAPI\Lab1\PRN232.EduSystem.Repositories\obj\Debug\net9.0\refint\PRN232.E
 D:\C#\WebAPI\Lab1\PRN232.EduSystem.Repositories\obj\Debug\net9.0\PRN232.EduSystem.Repositories.pdb
 D:\C#\WebAPI\Lab1\PRN232.EduSystem.Repositories\obj\Debug\net9.0\PRN232.EduSystem.Repositories.genruntimeconfig.cache
 D:\C#\WebAPI\Lab1\PRN232.EduSystem.Repositories\obj\Debug\net9.0\ref\PRN232.EduSystem.Repositories.dll
+D:\C#\WebAPI\Lab1\PRN232.EduSystem.Repositories\obj\Debug\net9.0\PRN232.EduSystem.Repositories.sourcelink.json

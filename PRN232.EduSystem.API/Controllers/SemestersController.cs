@@ -12,8 +12,13 @@ namespace PRN232.EduSystem.API.Controllers;
 public class SemestersController : ControllerBase
 {
     private readonly ISemesterService _service;
+    private readonly ICourseService   _courseService;
 
-    public SemestersController(ISemesterService service) => _service = service;
+    public SemestersController(ISemesterService service, ICourseService courseService)
+    {
+        _service       = service;
+        _courseService = courseService;
+    }
 
     [HttpGet]
     public async Task<IActionResult> GetAll([FromQuery] QueryParameters qp)
@@ -65,6 +70,25 @@ public class SemestersController : ControllerBase
         return Ok(ApiResponse<object>.Ok(null!, "Semester deleted successfully"));
     }
 
+    [HttpGet("{id:int}/courses")]
+    public async Task<IActionResult> GetCourses(int id, [FromQuery] QueryParameters qp)
+    {
+        if (!await _service.ExistsAsync(id))
+            return NotFound(ApiResponse<object>.Fail($"Semester with id={id} not found"));
+
+        var filter         = QueryParameterParser.ToQueryFilter(qp);
+        var (items, total) = await _courseService.GetBySemesterIdAsync(id, filter);
+        var responses      = items.Select(MapCourseToResponse).ToList();
+
+        if (!string.IsNullOrWhiteSpace(qp.Fields))
+        {
+            var filtered = FieldSelector.ApplyToList(responses.Cast<object>(), qp.Fields);
+            return Ok(PagedResponse<object?>.Ok(filtered, filter.Page, filter.PageSize, total));
+        }
+
+        return Ok(PagedResponse<CourseResponse>.Ok(responses, filter.Page, filter.PageSize, total));
+    }
+
     private static SemesterResponse MapToResponse(SemesterModel m) => new()
     {
         SemesterId   = m.SemesterId,
@@ -77,5 +101,20 @@ public class SemestersController : ControllerBase
             CourseName = c.CourseName,
             SemesterId = c.SemesterId,
         }).ToList(),
+    };
+
+    private static CourseResponse MapCourseToResponse(CourseModel m) => new()
+    {
+        CourseId        = m.CourseId,
+        CourseName      = m.CourseName,
+        SemesterId      = m.SemesterId,
+        EnrollmentCount = m.EnrollmentCount,
+        Semester = m.Semester is null ? null : new SemesterResponse
+        {
+            SemesterId   = m.Semester.SemesterId,
+            SemesterName = m.Semester.SemesterName,
+            StartDate    = m.Semester.StartDate,
+            EndDate      = m.Semester.EndDate,
+        },
     };
 }

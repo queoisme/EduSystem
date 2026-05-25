@@ -11,4 +11,5 @@ public interface IStudentRepository
     Task<Student?> UpdateAsync(Student entity);
     Task<bool> DeleteAsync(int id);
     Task<bool> ExistsAsync(int id);
+    Task<(List<Student> Items, int Total)> GetByCourseIdAsync(int courseId, QueryFilter filter);
 }

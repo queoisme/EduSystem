@@ -13,3 +13,4 @@ D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\obj\Debug\net9.0\PRN232.EduSystem.Se
 D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\obj\Debug\net9.0\refint\PRN232.EduSystem.Services.dll
 D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\obj\Debug\net9.0\PRN232.EduSystem.Services.pdb
 D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\obj\Debug\net9.0\ref\PRN232.EduSystem.Services.dll
+D:\C#\WebAPI\Lab1\PRN232.EduSystem.Services\obj\Debug\net9.0\PRN232.EduSystem.Services.sourcelink.json

@@ -3,8 +3,44 @@
   "WorkspaceRootPath": "D:\\C#\\WebAPI\\Lab1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D5A3D66F-5978-4449-9964-550DF2F81BAF}|PRN232.EduSystem.API\\PRN232.EduSystem.API.csproj|d:\\c#\\webapi\\lab1\\prn232.edusystem.api\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5A3D66F-5978-4449-9964-550DF2F81BAF}|PRN232.EduSystem.API\\PRN232.EduSystem.API.csproj|solutionrelative:prn232.edusystem.api\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D5A3D66F-5978-4449-9964-550DF2F81BAF}|PRN232.EduSystem.API\\PRN232.EduSystem.API.csproj|d:\\c#\\webapi\\lab1\\prn232.edusystem.api\\controllers\\enrollmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D5A3D66F-5978-4449-9964-550DF2F81BAF}|PRN232.EduSystem.API\\PRN232.EduSystem.API.csproj|solutionrelative:prn232.edusystem.api\\controllers\\enrollmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7CAA108-041F-4B6E-BFED-27C2E7D7C6DA}|PRN232.EduSystem.Repositories\\PRN232.EduSystem.Repositories.csproj|d:\\c#\\webapi\\lab1\\prn232.edusystem.repositories\\migrations\\20260524152857_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CAA108-041F-4B6E-BFED-27C2E7D7C6DA}|PRN232.EduSystem.Repositories\\PRN232.EduSystem.Repositories.csproj|solutionrelative:prn232.edusystem.repositories\\migrations\\20260524152857_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7CAA108-041F-4B6E-BFED-27C2E7D7C6DA}|PRN232.EduSystem.Repositories\\PRN232.EduSystem.Repositories.csproj|d:\\c#\\webapi\\lab1\\prn232.edusystem.repositories\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CAA108-041F-4B6E-BFED-27C2E7D7C6DA}|PRN232.EduSystem.Repositories\\PRN232.EduSystem.Repositories.csproj|solutionrelative:prn232.edusystem.repositories\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7CAA108-041F-4B6E-BFED-27C2E7D7C6DA}|PRN232.EduSystem.Repositories\\PRN232.EduSystem.Repositories.csproj|d:\\c#\\webapi\\lab1\\prn232.edusystem.repositories\\interfaces\\ienrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CAA108-041F-4B6E-BFED-27C2E7D7C6DA}|PRN232.EduSystem.Repositories\\PRN232.EduSystem.Repositories.csproj|solutionrelative:prn232.edusystem.repositories\\interfaces\\ienrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7CAA108-041F-4B6E-BFED-27C2E7D7C6DA}|PRN232.EduSystem.Repositories\\PRN232.EduSystem.Repositories.csproj|d:\\c#\\webapi\\lab1\\prn232.edusystem.repositories\\interfaces\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CAA108-041F-4B6E-BFED-27C2E7D7C6DA}|PRN232.EduSystem.Repositories\\PRN232.EduSystem.Repositories.csproj|solutionrelative:prn232.edusystem.repositories\\interfaces\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7CAA108-041F-4B6E-BFED-27C2E7D7C6DA}|PRN232.EduSystem.Repositories\\PRN232.EduSystem.Repositories.csproj|d:\\c#\\webapi\\lab1\\prn232.edusystem.repositories\\implementations\\semesterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CAA108-041F-4B6E-BFED-27C2E7D7C6DA}|PRN232.EduSystem.Repositories\\PRN232.EduSystem.Repositories.csproj|solutionrelative:prn232.edusystem.repositories\\implementations\\semesterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7CAA108-041F-4B6E-BFED-27C2E7D7C6DA}|PRN232.EduSystem.Repositories\\PRN232.EduSystem.Repositories.csproj|d:\\c#\\webapi\\lab1\\prn232.edusystem.repositories\\implementations\\enrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CAA108-041F-4B6E-BFED-27C2E7D7C6DA}|PRN232.EduSystem.Repositories\\PRN232.EduSystem.Repositories.csproj|solutionrelative:prn232.edusystem.repositories\\implementations\\enrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7CAA108-041F-4B6E-BFED-27C2E7D7C6DA}|PRN232.EduSystem.Repositories\\PRN232.EduSystem.Repositories.csproj|d:\\c#\\webapi\\lab1\\prn232.edusystem.repositories\\implementations\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CAA108-041F-4B6E-BFED-27C2E7D7C6DA}|PRN232.EduSystem.Repositories\\PRN232.EduSystem.Repositories.csproj|solutionrelative:prn232.edusystem.repositories\\implementations\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7CAA108-041F-4B6E-BFED-27C2E7D7C6DA}|PRN232.EduSystem.Repositories\\PRN232.EduSystem.Repositories.csproj|d:\\c#\\webapi\\lab1\\prn232.edusystem.repositories\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CAA108-041F-4B6E-BFED-27C2E7D7C6DA}|PRN232.EduSystem.Repositories\\PRN232.EduSystem.Repositories.csproj|solutionrelative:prn232.edusystem.repositories\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5A3D66F-5978-4449-9964-550DF2F81BAF}|PRN232.EduSystem.API\\PRN232.EduSystem.API.csproj|d:\\c#\\webapi\\lab1\\prn232.edusystem.api\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,7 +114,124 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.API\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "PRN232.EduSystem.API\\Controllers\\StudentsController.cs",
+              "ToolTip": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.API\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "PRN232.EduSystem.API\\Controllers\\StudentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T01:02:18.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.Repositories\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "PRN232.EduSystem.Repositories\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.Repositories\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "PRN232.EduSystem.Repositories\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T01:01:43.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "20260524152857_InitialCreate.cs",
+              "DocumentMoniker": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.Repositories\\Migrations\\20260524152857_InitialCreate.cs",
+              "RelativeDocumentMoniker": "PRN232.EduSystem.Repositories\\Migrations\\20260524152857_InitialCreate.cs",
+              "ToolTip": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.Repositories\\Migrations\\20260524152857_InitialCreate.cs",
+              "RelativeToolTip": "PRN232.EduSystem.Repositories\\Migrations\\20260524152857_InitialCreate.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T01:01:40.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IEnrollmentRepository.cs",
+              "DocumentMoniker": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.Repositories\\Interfaces\\IEnrollmentRepository.cs",
+              "RelativeDocumentMoniker": "PRN232.EduSystem.Repositories\\Interfaces\\IEnrollmentRepository.cs",
+              "ToolTip": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.Repositories\\Interfaces\\IEnrollmentRepository.cs",
+              "RelativeToolTip": "PRN232.EduSystem.Repositories\\Interfaces\\IEnrollmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T01:01:38.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ICourseRepository.cs",
+              "DocumentMoniker": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.Repositories\\Interfaces\\ICourseRepository.cs",
+              "RelativeDocumentMoniker": "PRN232.EduSystem.Repositories\\Interfaces\\ICourseRepository.cs",
+              "ToolTip": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.Repositories\\Interfaces\\ICourseRepository.cs",
+              "RelativeToolTip": "PRN232.EduSystem.Repositories\\Interfaces\\ICourseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T01:01:33.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SemesterRepository.cs",
+              "DocumentMoniker": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.Repositories\\Implementations\\SemesterRepository.cs",
+              "RelativeDocumentMoniker": "PRN232.EduSystem.Repositories\\Implementations\\SemesterRepository.cs",
+              "ToolTip": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.Repositories\\Implementations\\SemesterRepository.cs",
+              "RelativeToolTip": "PRN232.EduSystem.Repositories\\Implementations\\SemesterRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T01:01:29.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EnrollmentRepository.cs",
+              "DocumentMoniker": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.Repositories\\Implementations\\EnrollmentRepository.cs",
+              "RelativeDocumentMoniker": "PRN232.EduSystem.Repositories\\Implementations\\EnrollmentRepository.cs",
+              "ToolTip": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.Repositories\\Implementations\\EnrollmentRepository.cs",
+              "RelativeToolTip": "PRN232.EduSystem.Repositories\\Implementations\\EnrollmentRepository.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAswCwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T01:01:04.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CourseRepository.cs",
+              "DocumentMoniker": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.Repositories\\Implementations\\CourseRepository.cs",
+              "RelativeDocumentMoniker": "PRN232.EduSystem.Repositories\\Implementations\\CourseRepository.cs",
+              "ToolTip": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.Repositories\\Implementations\\CourseRepository.cs",
+              "RelativeToolTip": "PRN232.EduSystem.Repositories\\Implementations\\CourseRepository.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T01:00:58.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DataSeeder.cs",
+              "DocumentMoniker": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.Repositories\\Data\\DataSeeder.cs",
+              "RelativeDocumentMoniker": "PRN232.EduSystem.Repositories\\Data\\DataSeeder.cs",
+              "ToolTip": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.Repositories\\Data\\DataSeeder.cs",
+              "RelativeToolTip": "PRN232.EduSystem.Repositories\\Data\\DataSeeder.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T01:00:39.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ApiResponse.cs",
               "DocumentMoniker": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.API\\Models\\Responses\\ApiResponse.cs",
               "RelativeDocumentMoniker": "PRN232.EduSystem.API\\Models\\Responses\\ApiResponse.cs",
@@ -86,12 +239,11 @@
               "RelativeToolTip": "PRN232.EduSystem.API\\Models\\Responses\\ApiResponse.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAA2wAoAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T00:21:19.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T00:21:19.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "CoursesController.cs",
               "DocumentMoniker": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.API\\Controllers\\CoursesController.cs",
               "RelativeDocumentMoniker": "PRN232.EduSystem.API\\Controllers\\CoursesController.cs",
@@ -99,12 +251,11 @@
               "RelativeToolTip": "PRN232.EduSystem.API\\Controllers\\CoursesController.cs",
               "ViewState": "AgIAAEEAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T00:19:47.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T00:19:47.736Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "Enrollment.cs",
               "DocumentMoniker": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.Repositories\\Entities\\Enrollment.cs",
               "RelativeDocumentMoniker": "PRN232.EduSystem.Repositories\\Entities\\Enrollment.cs",
@@ -112,12 +263,11 @@
               "RelativeToolTip": "PRN232.EduSystem.Repositories\\Entities\\Enrollment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T00:19:30.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T00:19:30.719Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "Course.cs",
               "DocumentMoniker": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.Repositories\\Entities\\Course.cs",
               "RelativeDocumentMoniker": "PRN232.EduSystem.Repositories\\Entities\\Course.cs",
@@ -125,18 +275,17 @@
               "RelativeToolTip": "PRN232.EduSystem.Repositories\\Entities\\Course.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T00:19:26.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T00:19:26.205Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "EnrollmentsController.cs",
               "DocumentMoniker": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.API\\Controllers\\EnrollmentsController.cs",
               "RelativeDocumentMoniker": "PRN232.EduSystem.API\\Controllers\\EnrollmentsController.cs",
               "ToolTip": "D:\\C#\\WebAPI\\Lab1\\PRN232.EduSystem.API\\Controllers\\EnrollmentsController.cs",
               "RelativeToolTip": "PRN232.EduSystem.API\\Controllers\\EnrollmentsController.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAkwE8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAQwE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-25T00:17:47.018Z",
               "EditorCaption": ""

@@ -10,4 +10,5 @@ public interface ISemesterService
     Task<SemesterModel> CreateAsync(SemesterModel model);
     Task<SemesterModel?> UpdateAsync(int id, SemesterModel model);
     Task<bool> DeleteAsync(int id);
+    Task<bool> ExistsAsync(int id);
 }

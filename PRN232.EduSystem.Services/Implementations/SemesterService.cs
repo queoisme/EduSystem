@@ -51,6 +51,8 @@ public class SemesterService : ISemesterService
 
     public async Task<bool> DeleteAsync(int id) => await _repo.DeleteAsync(id);
 
+    public async Task<bool> ExistsAsync(int id) => await _repo.ExistsAsync(id);
+
     private static SemesterModel Map(Semester e) => new()
     {
         SemesterId   = e.SemesterId,

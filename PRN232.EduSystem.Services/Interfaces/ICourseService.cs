@@ -10,4 +10,6 @@ public interface ICourseService
     Task<CourseModel> CreateAsync(CourseModel model);
     Task<CourseModel?> UpdateAsync(int id, CourseModel model);
     Task<bool> DeleteAsync(int id);
+    Task<bool> ExistsAsync(int id);
+    Task<(List<CourseModel> Items, int Total)> GetBySemesterIdAsync(int semesterId, QueryFilter filter);
 }

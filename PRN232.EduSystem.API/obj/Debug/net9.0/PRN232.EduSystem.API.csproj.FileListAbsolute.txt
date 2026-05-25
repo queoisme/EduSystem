@@ -9,7 +9,6 @@ D:\C#\WebAPI\Lab1\PRN232.EduSystem.API\bin\Debug\net9.0\PRN232.EduSystem.API.pdb
 D:\C#\WebAPI\Lab1\PRN232.EduSystem.API\bin\Debug\net9.0\Azure.Core.dll
 D:\C#\WebAPI\Lab1\PRN232.EduSystem.API\bin\Debug\net9.0\Azure.Identity.dll
 D:\C#\WebAPI\Lab1\PRN232.EduSystem.API\bin\Debug\net9.0\Humanizer.dll
-D:\C#\WebAPI\Lab1\PRN232.EduSystem.API\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
 D:\C#\WebAPI\Lab1\PRN232.EduSystem.API\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\C#\WebAPI\Lab1\PRN232.EduSystem.API\bin\Debug\net9.0\Microsoft.Build.Locator.dll
 D:\C#\WebAPI\Lab1\PRN232.EduSystem.API\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
@@ -167,3 +166,4 @@ D:\C#\WebAPI\Lab1\PRN232.EduSystem.API\obj\Debug\net9.0\refint\PRN232.EduSystem.
 D:\C#\WebAPI\Lab1\PRN232.EduSystem.API\obj\Debug\net9.0\PRN232.EduSystem.API.pdb
 D:\C#\WebAPI\Lab1\PRN232.EduSystem.API\obj\Debug\net9.0\PRN232.EduSystem.API.genruntimeconfig.cache
 D:\C#\WebAPI\Lab1\PRN232.EduSystem.API\obj\Debug\net9.0\ref\PRN232.EduSystem.API.dll
+D:\C#\WebAPI\Lab1\PRN232.EduSystem.API\obj\Debug\net9.0\PRN232.EduSystem.API.sourcelink.json

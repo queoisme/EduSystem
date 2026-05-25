@@ -78,4 +78,31 @@ public class StudentRepository : IStudentRepository
 
     public async Task<bool> ExistsAsync(int id) =>
         await _context.Students.AnyAsync(x => x.StudentId == id);
+
+    public async Task<(List<Student> Items, int Total)> GetByCourseIdAsync(int courseId, QueryFilter filter)
+    {
+        var query = _context.Students
+            .Where(s => s.Enrollments.Any(e => e.CourseId == courseId));
+
+        if (!string.IsNullOrWhiteSpace(filter.Search))
+        {
+            var s = filter.Search.ToLower();
+            query = query.Where(x => x.FullName.ToLower().Contains(s) || x.Email.ToLower().Contains(s));
+        }
+
+        query = (filter.SortBy?.ToLower(), filter.Descending) switch
+        {
+            ("fullname",    false) => query.OrderBy(x => x.FullName),
+            ("fullname",    true)  => query.OrderByDescending(x => x.FullName),
+            ("email",       false) => query.OrderBy(x => x.Email),
+            ("email",       true)  => query.OrderByDescending(x => x.Email),
+            ("dateofbirth", false) => query.OrderBy(x => x.DateOfBirth),
+            ("dateofbirth", true)  => query.OrderByDescending(x => x.DateOfBirth),
+            _                      => query.OrderBy(x => x.StudentId),
+        };
+
+        var total = await query.CountAsync();
+        var items = await query.Skip((filter.Page - 1) * filter.PageSize).Take(filter.PageSize).ToListAsync();
+        return (items, total);
+    }
 }

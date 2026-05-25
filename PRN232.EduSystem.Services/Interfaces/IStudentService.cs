@@ -10,4 +10,6 @@ public interface IStudentService
     Task<StudentModel> CreateAsync(StudentModel model);
     Task<StudentModel?> UpdateAsync(int id, StudentModel model);
     Task<bool> DeleteAsync(int id);
+    Task<bool> ExistsAsync(int id);
+    Task<(List<StudentModel> Items, int Total)> GetByCourseIdAsync(int courseId, QueryFilter filter);
 }

@@ -11,4 +11,6 @@ public interface IEnrollmentRepository
     Task<Enrollment?> UpdateAsync(Enrollment entity);
     Task<bool> DeleteAsync(int id);
     Task<bool> ExistsAsync(int id);
+    Task<(List<Enrollment> Items, int Total)> GetByCourseIdAsync(int courseId, QueryFilter filter);
+    Task<(List<Enrollment> Items, int Total)> GetByStudentIdAsync(int studentId, QueryFilter filter);
 }

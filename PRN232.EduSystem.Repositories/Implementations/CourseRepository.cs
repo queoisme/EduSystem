@@ -76,4 +76,31 @@ public class CourseRepository : ICourseRepository
 
     public async Task<bool> ExistsAsync(int id) =>
         await _context.Courses.AnyAsync(x => x.CourseId == id);
+
+    public async Task<(List<Course> Items, int Total)> GetBySemesterIdAsync(int semesterId, QueryFilter filter)
+    {
+        var query = _context.Courses.Where(x => x.SemesterId == semesterId);
+
+        if (!string.IsNullOrWhiteSpace(filter.Search))
+        {
+            var s = filter.Search.ToLower();
+            query = query.Where(x => x.CourseName.ToLower().Contains(s));
+        }
+
+        if (filter.Expand.Contains("semester", StringComparer.OrdinalIgnoreCase))
+            query = query.Include(x => x.Semester);
+        if (filter.Expand.Contains("enrollments", StringComparer.OrdinalIgnoreCase))
+            query = query.Include(x => x.Enrollments);
+
+        query = (filter.SortBy?.ToLower(), filter.Descending) switch
+        {
+            ("coursename", false) => query.OrderBy(x => x.CourseName),
+            ("coursename", true)  => query.OrderByDescending(x => x.CourseName),
+            _                     => query.OrderBy(x => x.CourseId),
+        };
+
+        var total = await query.CountAsync();
+        var items = await query.Skip((filter.Page - 1) * filter.PageSize).Take(filter.PageSize).ToListAsync();
+        return (items, total);
+    }
 }

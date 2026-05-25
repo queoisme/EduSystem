@@ -49,6 +49,14 @@ public class CourseService : ICourseService
 
     public async Task<bool> DeleteAsync(int id) => await _repo.DeleteAsync(id);
 
+    public async Task<bool> ExistsAsync(int id) => await _repo.ExistsAsync(id);
+
+    public async Task<(List<CourseModel> Items, int Total)> GetBySemesterIdAsync(int semesterId, QueryFilter filter)
+    {
+        var (entities, total) = await _repo.GetBySemesterIdAsync(semesterId, filter);
+        return (entities.Select(Map).ToList(), total);
+    }
+
     private static CourseModel Map(Course e) => new()
     {
         CourseId        = e.CourseId,

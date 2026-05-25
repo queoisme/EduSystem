@@ -10,4 +10,6 @@ public interface IEnrollmentService
     Task<EnrollmentModel> CreateAsync(EnrollmentModel model);
     Task<EnrollmentModel?> UpdateAsync(int id, EnrollmentModel model);
     Task<bool> DeleteAsync(int id);
+    Task<(List<EnrollmentModel> Items, int Total)> GetByCourseIdAsync(int courseId, QueryFilter filter);
+    Task<(List<EnrollmentModel> Items, int Total)> GetByStudentIdAsync(int studentId, QueryFilter filter);
 }

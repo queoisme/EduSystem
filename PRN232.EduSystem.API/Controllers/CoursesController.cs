@@ -11,9 +11,16 @@ namespace PRN232.EduSystem.API.Controllers;
 [Route("api/[controller]")]
 public class CoursesController : ControllerBase
 {
-    private readonly ICourseService _service;
+    private readonly ICourseService      _service;
+    private readonly IEnrollmentService  _enrollmentService;
+    private readonly IStudentService     _studentService;
 
-    public CoursesController(ICourseService service) => _service = service;
+    public CoursesController(ICourseService service, IEnrollmentService enrollmentService, IStudentService studentService)
+    {
+        _service           = service;
+        _enrollmentService = enrollmentService;
+        _studentService    = studentService;
+    }
 
     [HttpGet]
     public async Task<IActionResult> GetAll([FromQuery] QueryParameters qp)
@@ -65,6 +72,44 @@ public class CoursesController : ControllerBase
         return Ok(ApiResponse<object>.Ok(null!, "Course deleted successfully"));
     }
 
+    [HttpGet("{id:int}/enrollments")]
+    public async Task<IActionResult> GetEnrollments(int id, [FromQuery] QueryParameters qp)
+    {
+        if (!await _service.ExistsAsync(id))
+            return NotFound(ApiResponse<object>.Fail($"Course with id={id} not found"));
+
+        var filter         = QueryParameterParser.ToQueryFilter(qp);
+        var (items, total) = await _enrollmentService.GetByCourseIdAsync(id, filter);
+        var responses      = items.Select(MapEnrollmentToResponse).ToList();
+
+        if (!string.IsNullOrWhiteSpace(qp.Fields))
+        {
+            var filtered = FieldSelector.ApplyToList(responses.Cast<object>(), qp.Fields);
+            return Ok(PagedResponse<object?>.Ok(filtered, filter.Page, filter.PageSize, total));
+        }
+
+        return Ok(PagedResponse<EnrollmentResponse>.Ok(responses, filter.Page, filter.PageSize, total));
+    }
+
+    [HttpGet("{id:int}/students")]
+    public async Task<IActionResult> GetStudents(int id, [FromQuery] QueryParameters qp)
+    {
+        if (!await _service.ExistsAsync(id))
+            return NotFound(ApiResponse<object>.Fail($"Course with id={id} not found"));
+
+        var filter         = QueryParameterParser.ToQueryFilter(qp);
+        var (items, total) = await _studentService.GetByCourseIdAsync(id, filter);
+        var responses      = items.Select(MapStudentToResponse).ToList();
+
+        if (!string.IsNullOrWhiteSpace(qp.Fields))
+        {
+            var filtered = FieldSelector.ApplyToList(responses.Cast<object>(), qp.Fields);
+            return Ok(PagedResponse<object?>.Ok(filtered, filter.Page, filter.PageSize, total));
+        }
+
+        return Ok(PagedResponse<StudentResponse>.Ok(responses, filter.Page, filter.PageSize, total));
+    }
+
     private static CourseResponse MapToResponse(CourseModel m) => new()
     {
         CourseId        = m.CourseId,
@@ -78,5 +123,29 @@ public class CoursesController : ControllerBase
             StartDate    = m.Semester.StartDate,
             EndDate      = m.Semester.EndDate,
         },
+    };
+
+    private static EnrollmentResponse MapEnrollmentToResponse(EnrollmentModel m) => new()
+    {
+        EnrollmentId = m.EnrollmentId,
+        StudentId    = m.StudentId,
+        CourseId     = m.CourseId,
+        EnrollDate   = m.EnrollDate,
+        Status       = m.Status,
+        Student = m.Student is null ? null : new StudentResponse
+        {
+            StudentId   = m.Student.StudentId,
+            FullName    = m.Student.FullName,
+            Email       = m.Student.Email,
+            DateOfBirth = m.Student.DateOfBirth,
+        },
+    };
+
+    private static StudentResponse MapStudentToResponse(StudentModel m) => new()
+    {
+        StudentId   = m.StudentId,
+        FullName    = m.FullName,
+        Email       = m.Email,
+        DateOfBirth = m.DateOfBirth,
     };
 }
